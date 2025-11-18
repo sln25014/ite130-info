@@ -9,131 +9,102 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <style>
-        header {
-            background: #fdf6ee !important;
-            color: #ff5000 !important;
-        }
-
-        .bg-primary {
-            background: #00332c !important;
-            color: #ff5000 !important;
-        }
-
-        .container,
-        .card,
-        .bg-light {
-            background: #fdf6ee !important;
-            color: #00332c !important;
-        }
-
-        .card-title,
-        h2,
-        h3,
-        h4 {
-            color: #00332c !important;
-        }
-
-        a {
-            color: #0066cc;
-        }
-
-        .btn,
-        .theme-toggle {
-            background: #ff5000;
-            color: #fff;
-            border: none;
-        }
-
-        .btn:hover,
-        .theme-toggle:hover {
-            background: #d14000;
-        }
-
-        footer {
-            background: #00332c !important;
-            color: #ff5000 !important;
-        }
-
-        .header {
-            margin: 0;
-            font-size: 2rem;
-            color: #ff5000;
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <title>ITE130</title>
 </head>
 
-<body class="bg-primary">
+<body>
 
-    <!-- Sidhuvud med kursnamn och MDU-profilfärger -->
-    <header class="bg-primary text-white text-center p-3">
-        <h1 class="header">Välkommen till ITE130</h1>
-    </header>
-
-    <!-- Huvudinnehåll med kursinformation, resurser, kontakt, nyheter, Git-info och studentberättelse -->
-    <div class="container rounded shadow p-4 mb-4">
-        <div class="mb-4">
-            <h3>Kursinformation</h3>
-            <p>ITE130 är en grundkurs i programmering och webbutveckling på Mälardalens universitet. Här hittar du
-                viktiga länkar och information för att lyckas med kursen.</p>
-        </div>
-
-        <!-- Länkar till resurser -->
-        <div class="mb-4">
-            <h3>Resurser</h3>
-            <ul>
-                <li><a href="https://www.mdu.se/student" target="_blank">MDU Studentportal</a></li>
-                <li><a href="https://canvas.mdu.se/" target="_blank">Canvas (kursplattform)</a></li>
-                <li><a href="#">Kursplan & Schema</a></li>
-                <li><a href="#">Labbuppgifter</a></li>
-            </ul>
-        </div>
-
-        <!-- Informationsruta om Git -->
-        <div class="mb-4 p-3 rounded" style="background:#e6f0ff; border-left:8px solid #ff5000;">
-            <h3 style="color:#00332c;">Vad är Git?</h3>
-            <p>Git är ett versionshanteringssystem som används för att spara, spåra och samarbeta kring kod. Med Git kan
-                du enkelt se ändringar, gå tillbaka till tidigare versioner och arbeta tillsammans med andra i projekt.
-                Git används ofta tillsammans med plattformar som GitHub och GitLab.</p>
-            <ul>
-                <li><strong>Versionshantering:</strong> Spara och återställ kodändringar.</li>
-                <li><strong>Samarbete:</strong> Flera personer kan arbeta på samma projekt.</li>
-                <li><strong>Historia:</strong> Se vem som gjort vad och när.</li>
-            </ul>
-            <p>Läs mer på <a href="https://git-scm.com/" target="_blank">git-scm.com</a></p>
-        </div>
-
-        <!-- Studentberättelse -->
-        <div class="card mb-4" style="max-width: 600px; margin: 0 auto;">
-            <div class="row no-gutters align-items-center">
-                <div class="col-md-4 text-center">
-                    <img src="..." alt="Student" class="img-fluid rounded-circle m-3" style="max-width:120px;">
-                </div>
-                <div class="col-md-8">
-                    <div class="card-body">
-                        <h4 class="card-title">Student berättar</h4>
-                        <p class="card-text">"Jag tyckte ITE130 var en rolig och lärorik kurs! Man får lära sig
-                            grunderna i programmering och webbutveckling, och lärarna är väldigt hjälpsamma. Labbarna
-                            var utmanande men gav mycket förståelse för hur kod fungerar i praktiken."</p>
-                        <p class="text-muted mb-0">– Erik, student HT25</p>
-                    </div>
+    <header class="site-header">
+        <div class="topbar container d-flex align-items-center justify-content-between">
+            <div class="brand d-flex align-items-center">
+                <div class="logo">MDU</div>
+                <div class="brand-text">
+                    <div class="univ">Mälardalens universitet</div>
                 </div>
             </div>
+            <div class="search-wrap">
+                <input class="search" placeholder="Sök på mdu.se" aria-label="Sök">
+                <button class="search-btn">Sök</button>
+            </div>
         </div>
+    </header>
 
-        <!-- Kontaktuppgifter till kursansvarig -->
-        <div class="mb-4">
-            <h3>Kontakt</h3>
-            <p><strong>Kursansvarig:</strong> Anna Andersson<br>
-                <strong>E-post:</strong> anna.andersson@mdu.se
-            </p>
+    <section class="hero">
+        <div class="container hero-grid">
+            <div class="hero-left">
+                <h1>ITE130</h1>
+                <p class="lead">ITE130 är en grundkurs i programmering och webbutveckling på Mälardalens universitet.
+                </p>
+                <hr class="hero-rule">
+            </div>
+            <div class="hero-right">
+                <img src="bilder/hero.jpg" alt="Glada studenter" onerror="this.style.opacity=.0">
+            </div>
         </div>
+    </section>
 
-    </div>
-    <!-- Sidfot -->
-    <footer class="bg-primary text-white text-center p-3">
-        &copy; 2025 ITE130 - Mälardalens universitet
+    <main class="main-beige">
+        <div class="container">
+            <h2 class="section-title">Populära sidor just nu</h2>
+            <div class="pills">
+                <a class="pill" href="https://canvas.mdu.se/courses/17897">Canvas</a>
+                <a class="pill" href="https://webbschema.mdu.se/setup/jsp/Schema.jsp?startDatum=idag&intervallTyp=a&intervallAntal=1&sprak=SV&sokMedAND=true&forklaringar=true&resurser=k.ITE130-TE130H25-">Schema</a>
+                <a class="pill" href="https://www.mdu.se/utbildning/kursplan?id=b695e6ec-3b13-11f0-b454-10049b20482b">Kursplan</a>
+            </div>
+
+            <div class="three-cols mt-5">
+                <div>
+                    <h3>Utbildning</h3>
+                    <p>Här får du kunskap, verktyg och möjlighet att skapa din framtid.</p>
+                </div>
+                <div>
+                    <h3>Jobba med oss</h3>
+                    <p>Var med på vår resa att, tillsammans med våra studenter och samarbetspartners, skapa en bättre
+                        framtid.</p>
+                </div>
+                <div>
+                    <h3>Vår forskning</h3>
+                    <p>Vår forskning leder till nödvändig kunskap och utveckling för industrin och välfärden.</p>
+                </div>
+            </div>
+
+            <section class="course-info mt-5">
+                <div class="info-grid">
+                    <div class="student-card mt-4">
+                        <div class="student-img"><img src="bilder/student.jpg" alt="Student"></div>
+                        <div>
+                            <h4>Student berättar</h4>
+                            <p>"Jag tyckte ITE130 var en rolig och lärorik kurs!"</p>
+                            <p class="muted">– Erik, student HT25</p>
+                        </div>
+                    </div>
+                    <div class="student-card mt-4">
+                        <div class="student-img"><img src="bilder/student.jpg" alt="Student"></div>
+                        <div>
+                            <h4>Student berättar</h4>
+                            <p>"Jag tyckte ITE130 var en rolig och lärorik kurs!"</p>
+                            <p class="muted">– Erik, student HT25</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="info-box highlight">
+                    <h4>Vad är Git?</h4>
+                    <p>Git är ett versionshanteringssystem som används för att spara, spåra och samarbeta kring kod.
+                    </p>
+                    <p><a href="https://git-scm.com/" target="_blank">Läs mer</a></p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">&copy; 2025 ITE130 - Mälardalens universitet</div>
     </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
