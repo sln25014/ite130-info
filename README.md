@@ -20,9 +20,9 @@ För att öppna AI chatten klickar man på dropdown-menyn högst upp i visual st
 
 ![Hur man öppnar chatten](bilder/open_chat.png)
 
-![chatruta](bilder/chatruta.png)
+![Chatruta](bilder/chatruta.png)
 
-![agents](bilder/agents.png)
+![Agenter](bilder/agents.png)
 
 ![]()
 
